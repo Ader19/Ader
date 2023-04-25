@@ -1,0 +1,270 @@
+:root{
+    --color-primario: #d90d0d;
+    --color-secundario: #082BA5;
+    --sombras: #000000;
+    --fondo: #FCFCFC;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #fff;
+    width: 100%;
+    top: 0px;
+    box-shadow: 0px 1px 6px var(--sombras);
+    position: fixed;
+    z-index: 1000000000000000000000000000000000000;
+}
+.menu{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+.menu .logo{
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.menu .logo img{
+    height: 60px;
+    padding: 10px;
+}
+
+.menu .btn-menu{
+    display: none;
+    color: red;
+    font-size: 1.8em;
+    text-decoration: none;
+
+}
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+@media screen and (max-width: 1023px){
+    header .menu{
+        flex-direction: column;
+    }
+    header .menu .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    header .menu .logo .btn-menu{
+        display: inline-block;
+        margin-top: .3em;
+    }
+    header .menu .enlaces{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    /* header .buscar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    } */
+}
+.menu .enlaces a{
+    color: var(--sombras);
+    font-family: 'Lato';
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .8em;
+    font-size: .8em;
+}
+.buscar{
+    display: flex;
+    display: inline-block;
+    text-align: center;
+    justify-content: space-between;
+}
+
+body{
+    background-image: url(../img/Untitled_page-0001.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+/* aquí empieza contactos */
+
+/* .wrap{
+    height: 60em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/Untitled_page-0001.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+
+/* .fondo{
+    background-image: url(../img/Untitled_page-0001.jpg);
+} */
+
+.info1{
+    margin-top: 10em;
+}
+.titu1{
+    font-size: 4em;
+    color: white;
+}
+.iconos12{
+    display: flex;
+    display: inline-block;
+    margin-left: 1em;
+    
+    
+}
+
+.iconos22{
+    background-color: white;
+    color: black;
+    font-size: 2.5em;
+    border-radius: 50%;
+    padding: .5em;
+   
+}
+.priv{
+    font-size: 2em;
+    color: white;
+}
+
+/* .uno{
+     color: white; 
+} */
+
+.formulario{
+    
+    /* width: 45em; */
+    /* box-shadow: 0px 0px 5px black; */
+    /* Sombra */
+       /* Margen */
+    border: none;
+    margin-bottom: 2em;
+        /* 1px (grosor) solid(tipo de borde) red(color) */
+    margin-top: 2em;
+    
+     
+}
+.titulo1{
+    color: white;
+    width: 100%;
+    /* text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    */
+    
+}
+.form1{
+    display: block;
+    /* para que ocupe el 100% de toda la columna */
+    padding: 1em;
+    width: 100%;
+    border: none;
+    margin-bottom: 1em;
+
+}
+textarea{
+    width: 100%;
+    display: block;
+    max-height: 300px;
+    /* la altura maxima para agrandarlo */
+    min-height: 250px;
+    /* la altura maxima para achicarlo */
+    border: none;
+    /* border: 1px solid black; */
+    
+    }
+
+    .boton1{
+        background-color: rgba(244,244,244, 0);
+        color: white;
+        margin-top: 1em;
+        width: 30%;
+        padding: .3em;
+        border: none;
+        border: 1px solid white;
+        font-weight: bold;
+
+        
+        
+    
+    }
+    .boton1:hover{
+
+        background-color: white;
+        transition: /* background-color  */ .5s linear;
+        color: black  ;
+    }
+    .wasap{
+        position: fixed;
+        bottom: 2em;
+        left: 1em;
+        font-size: 2.5em;
+        padding: .2em;
+        color: #FCFCFC;
+        background-color: #25D366;
+        border-radius: 50%;
+    }
+    
+    /* aquí empieza el píe de página */
+    footer{
+        background-color: black;
+        padding-bottom: 5em;
+        padding-top: 2em;
+        text-align: center;
+    }
+    h3{
+        color: white;
+        font-size: 1.2em;
+        margin-top: 1em;
+    }
+    h4{
+        color: white;
+        font-size: 0.9em;
+    }
+    .fa{
+        color: white;
+        margin-top: 1em;
+        margin-right: 1em;
+        font-size: 3em;
+    }
+    
+    .ig{
+        color: white;
+        margin-top: 1em;
+        margin-right: 1em;
+        font-size: 3em;
+    }
+    .tw{
+        color: white;
+        margin-top: 1em;
+        margin-right: 1em;
+        font-size: 3em;
+    }
+    .librito{
+        padding-right: 6em;
+        padding-top: 4em;
+        margin-left: 3em;
+    }
+    
+   
